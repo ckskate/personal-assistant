@@ -15,6 +15,7 @@ def square(n):
 
 def dispatcher(command, arg):
     """ Does things """
+    command = command.lower()
     if command == "weather":
         print("Here's the weather forcast for "+arg)
         print(apis.fetch_weather(arg))
